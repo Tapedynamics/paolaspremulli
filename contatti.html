@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Paola Spremulli</title>
+  <meta name="description" content="Contatta Paola Spremulli per collaborazioni, eventi e informazioni.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Paola <span>Spremulli</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="poesie.html">Poesie</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti.html" class="active">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contatti</h1>
+      <p>Per collaborazioni, eventi o semplicemente per un saluto</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="contact-section">
+
+      <p>
+        Hai una domanda, vuoi proporre una collaborazione o semplicemente
+        condividere le tue impressioni sulle poesie? Scrivimi a
+        <a href="mailto:paola.spremulli@gmail.com">paola.spremulli@gmail.com</a>
+        oppure usa il form qui sotto.
+      </p>
+
+      <!--
+        NOTA: Questo form è solo HTML. Per farlo funzionare hai bisogno di:
+        - Un servizio come Formspree (https://formspree.io)
+        - Oppure Netlify Forms se ospiti su Netlify
+        - Oppure un backend personalizzato
+
+        Per Formspree, cambia l'action in:
+        action="https://formspree.io/f/TUO_ID"
+      -->
+      <form class="contact-form" action="#" method="POST">
+
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Invia messaggio</button>
+
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Paola Spremulli. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
