@@ -952,6 +952,73 @@ footer .social-links a {
   }
 }
 
+/* ===== COLOR POEM ===== */
+
+.color-voice {
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.color-voice.blue {
+  background: linear-gradient(135deg, rgba(30, 144, 255, 0.1), rgba(0, 119, 190, 0.15));
+  border-left: 4px solid #1e90ff;
+}
+
+.color-voice.black {
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.1), rgba(0, 0, 0, 0.15));
+  border-left: 4px solid #2d2d2d;
+}
+
+.color-voice.yellow {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 193, 7, 0.2));
+  border-left: 4px solid #ffc107;
+}
+
+.color-voice.green {
+  background: linear-gradient(135deg, rgba(34, 139, 34, 0.1), rgba(46, 139, 87, 0.15));
+  border-left: 4px solid #228b22;
+}
+
+.color-voice.pink {
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.2), rgba(255, 105, 180, 0.15));
+  border-left: 4px solid #ff69b4;
+}
+
+.color-voice.red {
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.1), rgba(178, 34, 34, 0.15));
+  border-left: 4px solid #dc143c;
+}
+
+.color-voice.rainbow {
+  background: linear-gradient(135deg,
+    rgba(255, 0, 0, 0.08),
+    rgba(255, 165, 0, 0.08),
+    rgba(255, 255, 0, 0.08),
+    rgba(0, 128, 0, 0.08),
+    rgba(0, 0, 255, 0.08),
+    rgba(75, 0, 130, 0.08));
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #ff0000, #ff8c00, #ffd700, #228b22, #1e90ff, #4b0082) 1;
+}
+
+.stanza.finale {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .color-voice {
+    padding: 1rem;
+  }
+
+  .stanza.finale {
+    font-size: 1.1rem;
+  }
+}
+
 /* ===== UTILITIES ===== */
 
 .text-center { text-align: center; }
