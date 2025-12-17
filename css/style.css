@@ -513,14 +513,16 @@ footer .social-links a {
 }
 
 .award-badge {
-  display: inline-block;
+  display: block;
   background: var(--color-accent);
   color: white;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  width: fit-content;
 }
 
 .poem-full .category.award {
