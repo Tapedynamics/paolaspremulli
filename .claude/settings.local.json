@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: sito poetessa Paola Spremulli\n\n- Homepage stile rivista con grid magazine\n- Archivio poesie\n- Pagina bio (placeholder foto)\n- Pagina contatti con form\n- Prima poesia: Incanto a Tenerife\n- Design responsive, palette mediterranea\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

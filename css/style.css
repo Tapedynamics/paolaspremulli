@@ -478,6 +478,253 @@ footer .social-links a {
   }
 }
 
+/* ===== AWARD CARDS ===== */
+
+.award-card {
+  border: 2px solid var(--color-accent);
+  position: relative;
+}
+
+.award-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+}
+
+.award-info {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.bilingual-note {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.award-badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.poem-full .category.award {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.poem-full .date {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ===== BILINGUAL POEM ===== */
+
+.poem-bilingual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.poem-bilingual .poem-column {
+  border-left: 1px solid var(--color-sand);
+  padding-left: 2rem;
+}
+
+.poem-bilingual .poem-column:first-child {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 2rem;
+  border-right: 1px solid var(--color-sand);
+}
+
+.poem-full h1 .subtitle {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .poem-bilingual {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .poem-bilingual .poem-column,
+  .poem-bilingual .poem-column:first-child {
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid var(--color-sand);
+    padding-bottom: 2rem;
+  }
+
+  .poem-bilingual .poem-column:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ===== RECOGNITION PAGE ===== */
+
+.recognition-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.recognition-section:last-child {
+  border-bottom: none;
+}
+
+.recognition-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+/* Award Showcase */
+.award-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.award-image {
+  border: 1px solid var(--color-sand);
+  overflow: hidden;
+}
+
+.award-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.award-details {
+  padding: 1rem 0;
+}
+
+.award-year {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.award-details h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.award-subtitle {
+  font-style: italic;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.award-context {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.award-poem {
+  font-size: 1rem;
+}
+
+.award-poem a {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .award-showcase {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .award-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Review Card */
+.review-card {
+  background: var(--color-bg-alt);
+  padding: 3rem;
+  border: 1px solid var(--color-sand);
+}
+
+.review-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-sand);
+}
+
+.review-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-author {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.review-content p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.review-content blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  background: var(--color-bg);
+  border-left: 3px solid var(--color-accent);
+}
+
+.review-content blockquote p {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.review-content em {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
 /* ===== UTILITIES ===== */
 
 .text-center { text-align: center; }
