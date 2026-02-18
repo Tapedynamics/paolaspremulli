@@ -1024,6 +1024,7 @@ footer .social-links a {
 .poem-card .card-image {
   width: calc(100% + 4rem);
   margin: -2rem -2rem 1.5rem -2rem;
+  height: 200px;
   aspect-ratio: 16/9;
   overflow: hidden;
 }
@@ -1031,6 +1032,7 @@ footer .social-links a {
 .poem-card.featured .card-image {
   width: calc(100% + 6rem);
   margin: -3rem -3rem 2rem -3rem;
+  height: 280px;
   aspect-ratio: 2/1;
 }
 
