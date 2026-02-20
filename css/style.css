@@ -1087,6 +1087,55 @@ footer .social-links a {
   }
 }
 
+/* ===== SEARCH BAR ===== */
+
+.search-bar {
+  max-width: 500px;
+  margin: 2.5rem auto 0 auto;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid var(--color-sand);
+  background: var(--color-bg);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+#search-count {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  min-height: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    margin: 1.5rem auto 0 auto;
+    padding: 0 1rem;
+  }
+
+  .search-bar input {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
 /* ===== UTILITIES ===== */
 
 .text-center { text-align: center; }

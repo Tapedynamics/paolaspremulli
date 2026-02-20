@@ -35,6 +35,10 @@
   </section>
 
   <main class="container">
+    <div class="search-bar">
+      <input type="text" id="poem-search" placeholder="Cerca una poesia..." autocomplete="off">
+      <span id="search-count"></span>
+    </div>
     <div class="archive-grid">
 
       <!-- La Via delle Stelle - Premiata -->
@@ -805,6 +809,26 @@
       <p>&copy; 2024–2026 Paola Spremulli. Tutti i diritti riservati.</p>
     </div>
   </footer>
+
+  <script>
+    const search = document.getElementById('poem-search');
+    const count = document.getElementById('search-count');
+    const cards = document.querySelectorAll('.archive-grid .poem-card');
+
+    search.addEventListener('input', function () {
+      const q = this.value.toLowerCase().trim();
+      let visible = 0;
+      cards.forEach(function (card) {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const category = card.querySelector('.category').textContent.toLowerCase();
+        const excerpt = card.querySelector('.excerpt').textContent.toLowerCase();
+        const match = !q || title.includes(q) || category.includes(q) || excerpt.includes(q);
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      count.textContent = q ? visible + ' di ' + cards.length : '';
+    });
+  </script>
 
 </body>
 </html>
